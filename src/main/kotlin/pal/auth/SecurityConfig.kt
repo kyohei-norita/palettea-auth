@@ -73,7 +73,7 @@ class SecurityConfig {
                     .anyRequest().authenticated()
             }
             .formLogin(withDefaults())
-        return http.build();
+        return http.build()
     }
 
     @Bean
