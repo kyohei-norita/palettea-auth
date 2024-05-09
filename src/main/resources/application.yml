@@ -1,9 +1,12 @@
 spring:
   application:
     name: palettea-auth
-  security:
-    user:
-      name: user
-      password: password
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
 server:
   port: 9000
+palettea:
+  issuer-uri: ${ISSUER_URI}
